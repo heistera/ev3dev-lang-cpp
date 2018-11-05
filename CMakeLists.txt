@@ -4,6 +4,9 @@ if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE "RelWithDebInfo" CACHE STRING "Build type")
 endif()
 
+set(CMAKE_CC_COMPILER "arm-none-linux-gnueabi-gcc")
+set(CMAKE_CXX_COMPILER "arm-none-linux-gnueabi-g++")
+
 project(ev3dev-lang-cpp)
 
 # Is this used directly or via add_subdirectory()
